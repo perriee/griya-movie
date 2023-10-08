@@ -11,19 +11,19 @@ export const Navbar = () => {
   };
 
   return (
-    <div className="flex justify-between items-center bg-slate-800 px-10 py-4">
+    <div className="flex justify-between items-center bg-gray-800 px-10 py-4">
       <div>
         <div className="text-3xl font-bold text-red-600">
           <a href="/">Griya Movie</a>
         </div>
       </div>
-      <div className={isSearchClicked ? 'hidden' : 'block px-3 py-2 rounded-lg border-2 border-slate-300'}>
+      <div className={isSearchClicked ? 'hidden' : 'block px-3 py-2 rounded-lg border-2 border-gray-300'}>
         <button onClick={handleSearchClick}>
-          <span className="text-slate-400">Search Movie</span>
+          <span className="text-gray-400">Search Movie</span>
         </button>
       </div>
       <div className="flex gap-4">
-        <div className="bg-slate-800 border-2 border-red-600 rounded-lg px-3 py-2">
+        <div className="bg-gray-800 border-2 border-red-600 rounded-lg px-3 py-2">
           <a href="/" className="text-red-600">
             Login
           </a>

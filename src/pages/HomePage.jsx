@@ -18,10 +18,10 @@ export const HomePage = () => {
   return (
     <>
       <CarouselComponent />
-      <div className="bg-slate-700 min-h-screen">
+      <div className="bg-gray-700 min-h-screen">
         <div className="px-10 py-6 flex justify-between">
           <div className="text-xl font-bold text-white">Popular Movies</div>
-          <div className="text-xl font-bold text-red-600">
+          <div className="text-xl font-bold">
             <a href="/popular-movies">See All Movies</a>
           </div>
         </div>
