@@ -8,7 +8,7 @@ export const MovieList = ({ dataMovies }) => {
 
   return (
     <div className="flex flex-wrap justify-around gap-10">
-      {dataMovies?.slice(1, 5).map((movie) => (
+      {dataMovies && dataMovies.slice(1, 5).map((movie) => (
         <div key={movie.id} className="flex flex-col w-[20rem] shadow-lg rounded-lg bg-gray-600">
           <div className="w-full">
             <img src={`${process.env.REACT_APP_IMG_URL}${movie.poster_path}`} alt={movie.title} className="rounded-lg h-full" />

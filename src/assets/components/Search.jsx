@@ -33,7 +33,7 @@ export const Search = () => {
         <input type="text" className="border-2 border-gray-300 rounded-lg p-2" placeholder="Search for a movie..." value={searchQuery} onChange={handleSearch} />
       </div>
       <div className="flex flex-wrap justify-around gap-10 px-10 py-15">
-        {searchResults?.map((movie) => (
+        {searchResults && searchResults.map((movie) => (
           <div key={movie.id} className="flex flex-col w-[20rem] shadow-lg rounded-lg bg-gray-600">
             <div className="w-full">
               <img src={`${process.env.REACT_APP_IMG_URL}${movie.poster_path}`} alt={movie.title} className="rounded-lg h-full" />
