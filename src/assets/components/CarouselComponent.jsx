@@ -24,7 +24,7 @@ export const CarouselComponent = () => {
         </div>
       )}
     >
-      {nowPlaying.slice(13, 14).map((movie) => (
+      {nowPlaying?.slice(13, 14).map((movie) => (
         <div key={movie.id}>
           <div className="bg-black/50 min-h-screen">
             <div className="relative bg-center">
